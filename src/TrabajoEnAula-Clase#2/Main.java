@@ -20,7 +20,7 @@ public class Main {
             System.out.println("5. Mostrar todos los pacientes registrados");
             System.out.println("6. Salir del sistema");
 
-            System.out.print("\n¿Que desea hacer?: ");
+            System.out.print("\n¿Qué desea hacer?: ");
             opcion = sc.nextInt();
             sc.nextLine(); 
 
