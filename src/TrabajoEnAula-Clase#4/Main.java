@@ -24,7 +24,7 @@ public class Main{
             switch (opcion) {
                 case 1:
                     try{
-                        FileWriter fw = new FileWriter("Ejemplo.txt", true);
+                        FileWriter fw = new FileWriter("Estudiante.txt", true);
                         BufferedWriter bufferWriter = new BufferedWriter(fw);
 
                         System.out.print("\n|> Ingrese el nombre del estudiante: ");
@@ -50,11 +50,11 @@ public class Main{
                     break;
                 case 2:
                         try{
-                            File archivo = new File("Ejemplo.txt");
+                            File archivo = new File("Estudiante.txt");
     
                             if(archivo.exists()){
 
-                                FileReader read = new FileReader("Ejemplo.txt");
+                                FileReader read = new FileReader("Estudiante.txt");
                                 String linea;   
 
                                 BufferedReader buffer = new BufferedReader(read);
