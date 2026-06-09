@@ -1,0 +1,17 @@
+
+==== LISTA DE ESTUDIANTES ====
+
+Nombre: Franshelina Camilo Cabrera
+Edad: 19
+Matrícula: 1000-5493
+-----------------------------
+
+Nombre: Jose Luis Salazar Paulino
+Edad: 19
+Matrícula: 1000-5487
+-----------------------------
+
+Nombre: Dharianny Sime Maria
+Edad: 19
+Matrícula: 1000-5931
+-----------------------------
