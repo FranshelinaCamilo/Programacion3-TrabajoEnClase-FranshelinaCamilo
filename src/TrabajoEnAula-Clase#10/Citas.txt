@@ -1,0 +1,2 @@
+E006 - Francisco - 0 - 0 - Dr. Correa - Cardiologia - 2026-07-01 - 12:00 - Dolor de pecho - Programada
+F005 - Rafael - 0 - 0 - Dr. Martinez - Pediatria - 2026-07-08 - 12:34 - Paciente pediatrico con anemia - Cancelada

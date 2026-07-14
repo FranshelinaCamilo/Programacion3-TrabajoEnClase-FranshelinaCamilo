@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:controller="controller.PrincipalController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CADETBLUE" height="58.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="629.0" />
+      <Label fx:id="lblCodigo" layoutX="40.0" layoutY="82.0" style="-fx-font-weight: bold;" text="Codigo: " />
+      <Label fx:id="lblPaciente" layoutX="223.0" layoutY="82.0" style="-fx-font-weight: bold;" text="Paciente: " />
+      <Label fx:id="lblCedula" layoutX="418.0" layoutY="82.0" style="-fx-font-weight: bold;" text="Cedula:" />
+      <TextField fx:id="txtCodigo" layoutX="89.0" layoutY="78.0" prefHeight="17.0" prefWidth="117.0" />
+      <TextField fx:id="txtPaciente" layoutX="278.0" layoutY="78.0" prefHeight="17.0" prefWidth="117.0" />
+      <TextField fx:id="txtCedula" layoutX="466.0" layoutY="78.0" prefHeight="17.0" prefWidth="117.0" />
+      <Label layoutX="202.0" layoutY="19.0" style="-fx-font-weight: bold;" text="Sistema Básico de Citas Médicas">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTelefono" layoutX="40.0" layoutY="121.0" style="-fx-font-weight: bold;" text="Telefono: " />
+      <Label fx:id="lblHora" layoutX="236.0" layoutY="121.0" style="-fx-font-weight: bold;" text="Hora: " />
+      <TextField fx:id="txtTelefono" layoutX="96.0" layoutY="117.0" prefHeight="17.0" prefWidth="117.0" />
+      <TextField fx:id="txtHora" layoutX="272.0" layoutY="117.0" prefHeight="17.0" prefWidth="117.0" />
+      <ComboBox fx:id="cmbMedico" layoutX="40.0" layoutY="186.0" prefWidth="150.0" promptText="Seleccione una opcion" />
+      <ComboBox fx:id="cmbEspecialidad" layoutX="237.0" layoutY="186.0" prefWidth="150.0" promptText="Seleccione una opcion" />
+      <ComboBox fx:id="cmbEstado" layoutX="434.0" layoutY="186.0" prefWidth="150.0" promptText="Seleccione una opcion" />
+      <Label fx:id="lblMedico" layoutX="40.0" layoutY="165.0" style="-fx-font-weight: bold;" text="Medico: " />
+      <Label fx:id="lblEspecialidad" layoutX="237.0" layoutY="165.0" style="-fx-font-weight: bold;" text="Especialidad: " />
+      <Label fx:id="lblEstado" layoutX="435.0" layoutY="165.0" style="-fx-font-weight: bold;" text="Estado: " />
+      <DatePicker fx:id="dpFecha" layoutX="455.0" layoutY="117.0" prefHeight="25.0" prefWidth="117.0" />
+      <Label fx:id="lblFecha" layoutX="417.0" layoutY="121.0" style="-fx-font-weight: bold;" text="Fecha: " />
+      <Label fx:id="lblMotivo" layoutX="43.0" layoutY="237.0" prefHeight="17.0" prefWidth="124.0" style="-fx-font-weight: bold;" text="Motivo de consulta">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taMotivo" layoutX="49.0" layoutY="263.0" prefHeight="44.0" prefWidth="556.0" />
+      <TableView fx:id="tvCitas" layoutX="42.0" layoutY="344.0" prefHeight="134.0" prefWidth="556.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="colPaciente" prefWidth="75.0" text="Paciente" />
+            <TableColumn fx:id="colMedico" prefWidth="91.0" text="Medico" />
+            <TableColumn fx:id="colEspecialidad" prefWidth="112.0" text="Especialidad" />
+            <TableColumn fx:id="colFecha" prefWidth="68.0" text="Fecha" />
+            <TableColumn fx:id="colHora" prefWidth="48.0" text="Hora" />
+            <TableColumn fx:id="colEstado" prefWidth="86.0" text="Estado" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblCitas" layoutX="42.0" layoutY="317.0" prefHeight="17.0" prefWidth="124.0" style="-fx-font-weight: bold;" text="Citas Registradas">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistrar" layoutX="49.0" layoutY="498.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Registrar" onAction="#registrarCita"/>
+      <Button fx:id="btnCancelar" layoutX="162.0" layoutY="498.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Cancelar" onAction="#cancelarCita" />
+      <Button fx:id="btnLimpiar" layoutX="274.0" layoutY="498.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Limpiar" onAction="#Limpiar"/>
+      <Button fx:id="btnGuardar" layoutX="386.0" layoutY="498.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Guardar" onAction="#guardarCitas"/>
+      <Button fx:id="btnCargar" layoutX="501.0" layoutY="498.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Cargar" onAction="#CargarCitas"/>
+   </children>
+</Pane>
